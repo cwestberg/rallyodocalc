@@ -32,7 +32,7 @@ Motion::Project::App.setup do |app|
   app.frameworks += ['CoreData', 'CoreLocation','AudioToolbox']
   app.frameworks += ['MediaPlayer']
   app.frameworks += %w(AVFoundation)
-  app.info_plist['NSLocationAlwaysUsageDescription'] = 'Blah blah blah'
+  app.info_plist['NSLocationAlwaysUsageDescription'] = 'Do you want this app to run even when not active?'
   
   app.icons = Dir.glob("resources/AppIcon*.png").map{|icon| icon.split("/").last}
   app.release do
