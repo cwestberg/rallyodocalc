@@ -24,8 +24,6 @@ Motion::Project::App.setup do |app|
   # app.codesign_certificate = 'iPhone Distribution: Clarence Westberg'
   # app.identifier = 'com.cwrr.reider'
   app.name = 'RallyOdoCalc'
-  # app.device_family = [:iphone, :ipad]
-  # app.device_family = [:iphone]
   app.device_family = [:ipad]
   app.info_plist['UIBackgroundModes'] = [ 'location']
   app.interface_orientations = [:landscape_left, :landscape_right]
