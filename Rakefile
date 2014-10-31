@@ -4,11 +4,9 @@ require 'motion/project/template/ios'
 require 'bubble-wrap'
 require "bubble-wrap/mail"
 require 'bubble-wrap/media'
-
 require "sugarcube"
 require "sugarcube-color"
 require "sugarcube-gestures"
-
 require 'motion-settings-bundle'
 
 begin
@@ -16,7 +14,7 @@ begin
   Bundler.require
 rescue LoadError
 end
-
+# added to GitHub
 Motion::Project::App.setup do |app|
 
   # Use `rake config' to see complete project settings.
@@ -43,11 +41,8 @@ Motion::Project::App.setup do |app|
     app.codesign_certificate = 'iPhone Developer: Clarence Westberg'
     app.provisioning_profile = "/Users/clarencewestberg/Library/MobileDevice/Provisioning Profiles/d7cdbb63-8e05-489c-a951-1a0e18fd88b7.mobileprovision"
     # app.provisioning_profile = "/Users/clarencewestberg/Library/MobileDevice/Provisioning Profiles/c7733cc1-091f-4119-94ab-0df30c2ccc64.mobileprovision"
-    
   end
-
 end
-
 
 Motion::SettingsBundle.setup do |app|
   # app.toggle "Computer Mode", key: "computerEnabled", default: false
