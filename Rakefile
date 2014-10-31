@@ -11,7 +11,6 @@ require "sugarcube-gestures"
 
 require 'motion-settings-bundle'
 
-
 begin
   require 'bundler'
   Bundler.require
@@ -51,14 +50,6 @@ end
 
 
 Motion::SettingsBundle.setup do |app|
-  # A text field. Allows configuration of a string.
-  # app.text "Name", key: "username", default: "RallyOdoUser"
-  # app.text "E-mail", key: "email", keyboard: "EmailAddress", autocapitalization: "None"
-
-  # A read-only text field. Use for showing a small chunk of text, maybe a version number
-  # app.title "Year of Birth", key: "yearOfBirth", default: "10,175 AG"
-
-  # An on/off switch. Turn something on or off. Default is `false` (off).
   # app.toggle "Computer Mode", key: "computerEnabled", default: false
   # app.toggle "Calc Mileage", key: "calcMileageEnabled", default: false
   app.toggle "Cents", key: "cents_timing", default: false
