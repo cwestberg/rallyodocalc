@@ -15,6 +15,7 @@ begin
 rescue LoadError
 end
 # added to GitHub
+# test
 Motion::Project::App.setup do |app|
 
   # Use `rake config' to see complete project settings.
